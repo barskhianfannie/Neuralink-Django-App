@@ -1,0 +1,78 @@
+
+{% load static%}
+<footer id="footer" class="footer wf-section">
+    <div class="w-container">
+      <div class="footer-flex-container">
+        <a href="#" class="footer-logo-link"><img src="{% static 'images/Screen-Shot-2022-04-12-at-2.02.26-PM.png' %}" sizes="(max-width: 479px) 92vw, 60px"  alt="" class="footer-image"></a>
+        <div>
+          <h2 class="footer-heading">Devices</h2>
+          <ul role="list" class="w-list-unstyled">
+            <li>
+              <a href="#" class="footer-link">DH89280</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">SP-9800</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">GH09-2</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Customers</h2>
+          <ul role="list" class="w-list-unstyled">
+            {% if not request.user.is_authenticated %}
+            <li>
+              <a href="" class="footer-link">Dashboard</a>
+            </li>
+            {%endif%}
+            <li>
+              <a href="#" class="footer-link">Log In</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div>Copyright © 2022 Fannie Barskhian For Neuralink</div>
+    </div>
+  </footer>
+
+<!-- <div class="container">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+
+        <div class="row">
+
+            <div class="col-12 col-md">
+                <a>
+                <img class="mb-2" src="https://i.ibb.co/SBK5vfX/Screen-Shot-2022-04-12-at-2-02-26-PM.png"alt="" width="200"
+                    height="100"></a>
+                <small class="d-block mb-3 text-muted">&copy; 2022 - Fannie Barskhian for Neuralink</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Devices</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">D90278-H</a></li>
+                    <li><a class="text-muted" href="#">CR8-3892</a></li>
+                    <li><a class="text-muted" href="#">DDP-980</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Contact</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Contact Us</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div> -->
+

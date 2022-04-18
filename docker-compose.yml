@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+      - "22:8000"
+      - "80:8000"
+    volumes:
+      - ./:/
+    command: sh -c "python3 manage.py runserver"
+    environment:
+      - DEBUG=1

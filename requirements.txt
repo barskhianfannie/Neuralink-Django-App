@@ -1,0 +1,7 @@
+django==3.2.13
+django_rest_framework==0.1.0
+six==1.16.0
+djangorestframework
+gunicorn==20.1.0
+martor
+uwsgi

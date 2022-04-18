@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - static_data:/vol/web/static/
+    environment:
+      - ALLOWED_HOSTS=[*]
+
+  proxy:
+    build:
+      context: ./proxy
+    volumes:
+      - static_data:/static
+    ports:
+      - "8080:8080"
+      - "8000:8000"
+      - "22:8000"
+      - "80:8000"
+    depends_on:
+      - app
+
+volumes:
+  static_data:

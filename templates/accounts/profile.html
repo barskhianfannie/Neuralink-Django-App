@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+{%load static%}
+
+<header id="hero" class="hero wf-section">
+  <div class="columns w-row">
+    <div class="w-col w-col-4"></div>
+    <div class="w-col w-col-4">
+      <h1 class="heading-8">Host Dashboard</h1>
+      {% for d in devices %}
+      <p class="paragraph-9">The <strong>device</strong> is <strong>active.</strong>  </p>
+      <div class="hero-image-mask div-block"><img src="{% static 'images/prof.png'%}"alt="" class="hero-image"></div>
+    </div>
+    <div class="w-col w-col-4"></div>
+  </div>
+  <div class="flex-container w-container">
+    <div class="div-block-2 margin-auto">
+
+
+</header>
+
+
+<div class="wf-section">
+
+  <div data-w-id="8076565d-006f-aa16-31f0-49ffc167d006" data-animation-type="lottie" data-src="{% static 'documents/87987-line-animation.json'%}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
+  <h1 class="heading-7">Recent Data</h1>
+  <div>
+    <div data-w-id="2cd0079b-ea79-77d4-6795-11e1d6118a53" data-animation-type="lottie" data-src="{% static 'documents/87987-line-animation.json'%}" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
+
+    <hr style="width:75%">
+    <h5>{{d.deviceName}}</h5>
+    {% for a in actions %}
+    <p>{{a.data}}</p>
+    <hr style="width:75%">
+  </div>Your ID number is-</div><h1>{{d.id}}</h1>
+    {%endfor%}
+    {%endfor%}
+  </div>
+</div>
+
+
+{% include "components/footer.html" %}
+{% endblock %}
