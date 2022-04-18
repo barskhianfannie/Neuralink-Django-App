@@ -21,7 +21,7 @@ NEURALINK(Root)
         └── requirements.txt
 ```
 
-![](https://github.com/barskhianfannie/Stocks-Visualizer/blob/main/stocks.gif)
+![](https://github.com/barskhianfannie/Neuralink-Django-App/blob/main/neuralink.gif)
 
 
 From the terminal navigate to the Neuralink Root Directory and run
