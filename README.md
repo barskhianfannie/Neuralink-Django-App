@@ -1,6 +1,6 @@
 This is Fannie's Neuralink Submission.
 
-NEURALINK(Root)
+`NEURALINK(Root)
     ├──-
         ├── accounts
         ├── actions
@@ -18,8 +18,10 @@ NEURALINK(Root)
         └── manage.py
         └── ReadMe
         └── requirements.txt
+`
 
 From the terminal navigate to the Neuralink Root Directory and run
+
 `docker-compose -f docker-compose-deploy.yml up --build`
 
 This will set up the Nginx server and allow you to access the application via the following link. 
