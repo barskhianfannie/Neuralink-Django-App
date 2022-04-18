@@ -1,4 +1,4 @@
-This is Fannie's Neuralink Submission.
+
 This follows the abstract tree below. Each file under the root is composed of many more files / directories.
 ```
 NEURALINK(Root)
