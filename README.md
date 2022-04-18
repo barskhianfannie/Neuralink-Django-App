@@ -21,6 +21,9 @@ NEURALINK(Root)
         └── requirements.txt
 ```
 
+![](https://github.com/barskhianfannie/Stocks-Visualizer/blob/main/stocks.gif)
+
+
 From the terminal navigate to the Neuralink Root Directory and run
 
 `docker-compose -f docker-compose-deploy.yml up --build`
