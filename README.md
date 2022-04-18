@@ -1,6 +1,7 @@
 This is Fannie's Neuralink Submission.
-
-`NEURALINK(Root)
+This follows the abstract tree below. Each file under the root is composed of many more files / directories.
+```
+NEURALINK(Root)
     ├──-
         ├── accounts
         ├── actions
@@ -18,7 +19,7 @@ This is Fannie's Neuralink Submission.
         └── manage.py
         └── ReadMe
         └── requirements.txt
-`
+```
 
 From the terminal navigate to the Neuralink Root Directory and run
 
@@ -46,12 +47,3 @@ The provided username/password credentials is for a 'superuser'. You may log in 
 
 
 
-Pros and cons of the implementation - 
-
-Pros- User profile functionality, with REST API calls.
-
-Cons- Not enough time to implement a better UI/UX experience for the REST API functionality. I believe I would have dont a much better job had I not be in school fulltime and working. I wasn't able to deploy to the cloud via docker deployment. Test functionality was completed by hand and did not make use of the tests.py per django application. No CI/CD pipeline was set for continuous updating and distributions. I wanted to have an interactive way for admin to list the whitelisted IP's. The IP's are configured in the docker build.
-
-I would change the CI/CD pipeline and REST API functionalitiy if I was given more time. 
-
-Thank you for the opportunity! 
